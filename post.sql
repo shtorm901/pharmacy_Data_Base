@@ -1,0 +1,4 @@
+CREATE TABLE post(
+    post_id INTEGER PRIMARY KEY,
+    post_name VARCHAR(100) NOT NULL
+)
