@@ -2,8 +2,10 @@ import os
 import sqlite3
 
 class BaseWorker:
+
     def set_base_bath(self, base_path:str):
         self.base_path = base_path
+
     def Base_check(self) -> bool:
         return os.path.exists(self.base_path)
 

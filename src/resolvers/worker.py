@@ -2,7 +2,8 @@ from sql_base import base_worker
 from sql_base import models
 
 
-def new_worker(workers: models.Workers) -> int:
+
+def new_workers(workers: models.Workers) -> int:
     work_id = base_worker.insert_data("INSERT INTO workers(post_id, name, surname)"
                                       "VALUES(?,?,?)"
                                       "RETURNING workers_id",
